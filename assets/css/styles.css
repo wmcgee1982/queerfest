@@ -1,0 +1,420 @@
+/* *** Universal Styles *** */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif, Helvetica, Arial, Verdana;
+    color: var(--dark);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body { 
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: column;
+  }
+  .container {
+    padding: 1em; 
+  }
+  .containerBox {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--background);
+    box-shadow: 0px 1px 10px #9e9b9b;
+  }
+  .containerBoxDark {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--dark);
+    box-shadow: 0px 1px 10px #9e9b9b;
+  }
+  .containerBoxDark h3 {
+    color: var(--background);
+    padding: 1rem;
+  }
+  
+  .containerBoxDark p {
+    color: var(--background);
+  }
+  
+  .containerBoxDark a {
+    color: var(--background);
+  }
+  
+  /* *** Root Styles *** */
+  :root {
+    --light: #74BBA5;
+    --dark: #014038;
+    --background: #eeeeee;
+  }
+   
+  /* *** Headers, Paragraph, Image *** */
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 25px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  h6 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 16px;
+    padding: 1rem;
+    line-height: 1.4rem;
+  }
+  @-webkit-keyframes glow {
+    from {text-shadow: 0 0 10px var(--dark);}
+    to {text-shadow: 0 0 10px var(--light);}
+  }
+  img { 
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 1rem;
+   }
+   .multicolortext {
+    background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  /* *** Nav Section *** */
+  nav { 
+    position: sticky; 
+    top: 0px;
+    background-color: var(--dark);
+    border-bottom: 3px var(--dark) solid;
+    box-shadow: 0px 0px 10px var(--light);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "tt tt ss"
+    "mu mu mu";
+    z-index: 1;
+  }
+  
+  /* *** Title *** */
+  #title {
+    grid-area: tt;
+    display: inline-block;
+    color: var(--background);
+    padding: 0.5rem 1rem;
+  }
+  
+  /* *** Search *** */
+  .search-wrapper {
+    grid-area: ss;
+    padding: 1rem;
+  }
+  .search-wrapper label {
+    color: var(--background);
+    padding: 1rem;
+  }
+  input {
+    font-size: 1rem;
+    height: 30px;
+    width: 250px;
+    border-radius: 1rem;
+    border: var(--background);
+    background-color: var(--background);
+    padding: 1rem;
+  }
+  
+  /* *** Menu *** */
+  #menu {
+    grid-area: mu;
+  }
+  #menu ul {
+    list-style-type: none;
+    text-align: right;
+    padding: 0.5rem;
+  }
+  #menu li {
+    display: inline-block;
+    text-align: center;
+    margin-inline: 0.5rem;
+  }
+  #menu a {
+    text-decoration: none;
+    padding: 0.5rem;
+    color: var(--background)
+  }
+  #menu a:hover,
+  #menu a:focus {
+    cursor: pointer;
+    text-decoration: none;
+    background-image: linear-gradient(to left, violet, rgb(71, 106, 188), green, rgb(227, 227, 5), rgb(255, 0, 89), orange, red);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  /* *** Banner *** */
+  #banner {
+    background-image: url(../Images/HomePage\ Banner\ Intranet.png);
+    background-repeat: no-repeat;
+    height: 400px;
+    background-size: 100vw auto;
+  }
+  
+  /* *** Main Body Grid *** */
+  .mainGrid {
+    padding: 3rem 3rem 0rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "wl wl sb"
+    "wl wl pn";
+    gap: 2rem;
+  }
+  
+  /* *** Welcome Text *** */
+  .welcome {
+    grid-area: wl;
+    border-radius: 10px;
+    border: solid 1px var(--dark);
+  }
+  .welcome h4 {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--dark);
+    border-radius: 7px 7px 0px 0px;
+  }
+  .welcome ul {
+    padding-bottom: 1rem;
+  }
+  .welcome li {
+    list-style-type: circle;
+    list-style-position: inside;
+    line-height: 1.5;
+    list-style-image: url("../Images/LGBTQI+\ Check\ Tick.png");
+    margin-left: 2rem;
+  }
+  .welcomeContainerBox {
+    padding: 1rem;
+    border-radius: 0px 0px 10px 10px;
+    background-color: white;
+  }
+  
+  /* *** Thank You Text *** */
+  .messageBanner h6 {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* *** Side Bar *** */
+  .sidebar {
+    grid-area: sb;
+    overflow-y: auto;
+    height: 400px;
+  }
+  .sidebar h6 {
+    color: var(--dark);
+    padding-bottom: 0.5rem;
+  }
+  .sidebarContainerBox {
+    border-radius: 1px;
+    border-bottom: 1px solid #9e9b9b;
+  }
+  .sidebarContainerBox p {
+    font-size: 14px;
+  }
+  .sidebar1 {
+    grid-area: pn;
+  }
+  .sidebar2 {
+    grid-area: gt;
+  }
+  
+  /* *** Charity Updates *** */
+  .updates {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "ti ti ti"
+    "ar1 ar2 ar3"
+    "ar1 ar2 ar4";
+    gap: 2rem;
+  }
+  .updates h3 {
+    grid-area: ti;
+    color: var(--dark);
+    text-align: center;
+  }
+  .updatesBox {
+    border-radius: 0rem 2rem;
+    background-color: var(--background);
+    padding: 1rem;
+    box-shadow: 0px 5px 20px #9e9b9b;
+    min-width: 200px;
+    border: 2px solid white;
+  }
+  .ar1 {
+    grid-area: ar1;
+    background-image: url(../Images/Exeter\ Cathedral-img.webp);
+    background-size: cover;
+    display: flex;
+    align-items: end;
+  }
+  .ar1 p {
+    color: var(--background);
+    background-color: rgba(255, 255, 255, 0.7); 
+    border-radius: 1rem;
+  }
+  .ar2 {
+    grid-area: ar2;
+  }
+  .ar3 {
+    grid-area: ar3;
+  }
+  .ar4 {
+    grid-area: ar4;
+    font-weight: bold;
+  }
+  .updatesBox li {
+    list-style-type: circle;
+    list-style-position: inside;
+    margin-left: 1rem;
+    color: var(--dark);
+    line-height: 1.4rem;
+    text-align: left;
+  }
+  .updatesBox p {
+    color: var(--dark);
+    line-height: 1.4rem;
+    text-align: left;
+  }
+  
+  /* *** Circle Menus *** */
+  .menuCirclesContainer {
+    padding: 1rem 3rem;
+  }
+  .menuCircles,
+  .menuCircles a {
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+    flex-flow: row wrap;
+    text-decoration: none;
+    gap: 1rem;
+  }
+  .circleBox {
+    min-width: 150px;
+    min-height: 150px;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px #9e9b9b;
+    background-color: var(--background);
+    transition: transform 1s;
+  }
+  .circleBoxRainbow {
+    background-image: linear-gradient(to left, violet, indigo, green, blue, rgb(255, 0, 89), orange, red);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: ease-in-out infinite alternate;
+  }
+  .circleBox:hover,
+  .circleBox:focus {
+    background-color: var(--dark);
+    color: var(--light);
+    cursor: pointer;
+    text-decoration: none;
+    animation: glow 0.5s ease-in-out infinite alternate;
+    transform: scale(0.80); 
+  }
+  
+  /* *** Next Steps *** */
+  .nextSteps {
+    margin: 3rem;
+    border: 2px solid var(--dark);
+  }
+  .nextSteps h3 {
+    color: var(--background);
+    padding: 1rem;
+  }
+  .nextSteps p {
+    color: var(--background);
+  }
+  
+  /* *** Footer Section *** */
+  footer { 
+    margin-top: auto;
+    background-color: var(--dark);
+    box-shadow: 0px 0px 10px #9e9b9b;
+    position: sticky;
+    bottom: 0;
+  }
+  footer .container {
+  display: flex;
+  justify-content: flex-end;
+  }
+  .footerGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "ft cn";
+    gap: 2rem;
+  }
+  
+  /* *** Footer Menu *** */
+  #footerMenu {
+    grid-area: ft;
+    columns: 2;
+  }
+  #footerMenu ul {
+    list-style-type: none;
+  }
+  #footerMenu li {
+    padding: 0.5em;
+  }
+  #footerMenu a {
+    text-decoration: none;
+    color: white;
+  }
+  #footerMenu a:hover,
+  #footerMenu a:focus {
+    opacity: 0.5;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  /* *** Footer Contact Info *** */
+  #footerColumns {
+    grid-area: cn;
+    columns: 2;
+  }
+  #footerColumns ul {
+    list-style-type: none;
+  }
+  #footerColumns li {
+    padding: 0.5em;
+    color: white;
+  }
+  #footerColumns a {
+    color: white;
+  }
