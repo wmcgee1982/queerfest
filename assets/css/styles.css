@@ -203,7 +203,7 @@
     list-style-type: circle;
     list-style-position: inside;
     line-height: 1.5;
-    list-style-image: url("../Images/LGBTQI+\ Check\ Tick.png");
+    list-style-image: url("../images/LGBTQI+ Check Tick.png");
     margin-left: 2rem;
   }
   .welcomeContainerBox {
@@ -268,7 +268,7 @@
   }
   .ar1 {
     grid-area: ar1;
-    background-image: url(../Images/Exeter\ Cathedral-img.webp);
+    background-image: url(../images/Exeter\ Cathedral-img.webp);
     background-size: cover;
     display: flex;
     align-items: end;
