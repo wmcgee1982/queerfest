@@ -18,13 +18,14 @@
     <!-- Nav Bar -->
     <nav>
         <!-- Title -->
-        <h2 id="title">Exeter Q-Fest Committee Intranet</h2>
+        <h3 id="title">Exeter Q-Fest Committee Intranet</h3>
 
         <!-- Search -->
-        <section class="search-wrapper">
-            <label for="search">Search Site</label>
-            <input type="search" id="search">
-        </section>
+        <form id="search" action="html/comms.html" method="get">
+            <input type="search" name="searchResults" placeholder="Search">
+            <button id="searchBtn" type="submit" name="searchEnter"><i class="fa">&#xf002;</i>
+            </button>
+        </form>
      
         <!-- Menu -->
         <h6 id="menu">
@@ -94,10 +95,11 @@
             <h3>Latest Exeter Queer Fest News</h3>
             <!-- Box row 1 column 1 -->
             <article class="updatesBox ar1">
-                <p>The committee agreed that the festival should be set up with charity status. The charity will initially be set-up with four trustees. Click here to see the list of Trustees.</p>
+                <p><b>CHARITY STATUS</b><br>committee agreed that it should be set up with charity status. The charity will be incorporated with four trustees. Click <a href="/html/governance.html">here</a> to see the list of Trustees.</p>
             </article>
             <!-- Box row 1 column 2 -->
             <article class="updatesBox ar2">
+                <b>SUB-GROUPS</b>
                 <p>The sub-groups have now been confirmed as:</p>
                 <ul>
                     <li>Policy and Legal, and Risk and Safety</li>
@@ -113,6 +115,7 @@
             </article>
             <!-- Box row 2 column 1 -->
             <article class="updatesBox ar3">
+                <b>MEETING MINUTES</b>
                 <p>The minutes for the latest committee meeting is now availble. Click <a href="assets/objects/2023_09_19 - Exeter Queer Festival Meeting Minutes.pdf" target="_blank">here</a> to download the minutes. If you weren't able to attend and missed the last email, <a href="https://drive.google.com/file/d/1mWy4FMOYwEjKnrb0eItvNeHpqExPF8lP/view?usp=sharing" target="_blank">here</a> is the link to watch back the meeting.</p>
             </article>
             <!-- Box row 2 column 2 -->
@@ -134,14 +137,33 @@
         </section>
         
         <!-- Next Steps -->
-        <section class="containerBoxDark nextSteps">
-            <h3>Committee Next Steps</h3>
-            <p>We will continue to develop the governance structure for the charity. We will meet with the subgroup leaders to help them set up working groups and invite other committee members to participate. The subgroup leaders will support us in building partnerships, raising funds, and creating the vision for our 2024 festival.</p>
-            <p>We appreciate your valuable feedback on the charity's aims, values, goals, and name. We will work on your feedback and communicate any decisions to you. We will take some time to develop policies and strategies, which we will present to you at the next committee meeting in October.</p>
-            <p>We have set-out a loose timeline to work towards. We recognise the hard work needed, especially in the first couple of months. We have also put together a brief process map detailing areas of work we will be focusing on in the coming months.</p>
-            <p>For the timeline, click <a href="assets/images/Timeline.png" target="_blank">here</a>.<br/>
-            For the process map, click <a href="assets/images/Plan.png" target="_blank">here</a>.<br/>
-            For more informaiton about our vision, click <a href="html/vision.html">here</a>.</p>
+        <section class="next">
+            <article class="nextText">
+                <h3>Committee Next Steps</h3>
+                <p>We will continue to develop the governance structure for the charity. We will meet with the subgroup leaders to help them set up working groups and invite other committee members to participate. The subgroup leaders will support us in building partnerships, raising funds, and creating the vision for our 2024 festival.</p>
+                <p>We appreciate your valuable feedback on the charity's aims, values, goals, and name. We will work on your feedback and communicate any decisions to you. We will take some time to develop policies and strategies, which we will present to you at the next committee meeting in October.</p>
+                <p>We have set-out a loose timeline to work towards. We recognise the hard work needed, especially in the first couple of months. We have also put together a brief process map detailing areas of work we will be focusing on in the coming months.</p>
+                <p>For the timeline, click <a href="assets/images/Timeline.png" target="_blank">here</a>.<br/>
+                For the process map, click <a href="assets/images/Plan.png" target="_blank">here</a>.<br/>
+                For more informaiton about our vision, click <a href="html/vision.html">here</a>.</p>
+            </article>
+        </section>
+    </div>
+
+        <!-- Recruit -->
+        <section class="containerBoxRecruit">
+        <section class="recruit">
+            <h6>KNOW OF ANYONE WHO WOULD LIKE TO JOIN THE COMMITTEE</h6>
+            <p><b>​Do you​ know of anyone passionate about making a difference ​in Exeter's queer community?</b></p>
+            <p>​W​e are continuing to look for new committee members to join us in our mission.​ ​W​e are excited to work with people who are passionate about ​the charity's cause and ​who are willing to give their time and talents to help us make a difference.</p>
+            <p>We are especially looking for people with the following skills:</p>        
+            <ul>
+                <li>Fundraising</li>
+                <li>Marketing and Communications</li>
+                <li>Social Media Content Creators</li>
+            </ul>
+            <p>As a member of the Charity Committee, ​w​e have the opportunity to​ make a real difference ​to the lives of people in ​our community​. Importantly we get to network with like-minded p​eers, make new friends, and have fun!</p>
+            <p>If you ​know of ​a​nyone who would be interested in joining the Charity Committee, ​please ask them to email us at <a href="mailto:exeterqueerfest@gmail.com">exeterqueerfest@gmail.com</a>.</p> 
         </section>
     </main>
 
@@ -169,4 +191,6 @@
     </footer>
 
 </body>
+
+<script src="/assets/css/index.js"></script>
 </html>
