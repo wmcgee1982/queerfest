@@ -11,21 +11,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
     <!-- My customised style library -->
-    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
 <body> 
     <!-- Nav Bar -->
     <nav>
         <!-- Title -->
-        <h2 id="title">Exeter Q-Fest Committee Intranet</h2>
+        <h3 id="title">Exeter Q-Fest Committee Intranet</h3>
 
         <!-- Search -->
-        <section class="search-wrapper">
-            <label for="search">Search Site</label>
-            <input type="search" id="search">
-        </section>
-
+        <form id="search" action="/html/search.html" method="get">
+            <input type="search" name="searchResults" placeholder="Search">
+            <button id="searchBtn" type="submit" name="searchEnter"><i class="fa">&#xf002;</i>
+            </button>
+        </form>
+     
         <!-- Menu -->
         <h6 id="menu">
             <ul>
@@ -47,6 +48,7 @@
     <!-- Main Body -->
     <main>
                 <div class="">
+                    <h1>Community and Participation</h1>
                     <p>INSERT MAIN BODY CONTENT</p>
                 </div>
     
