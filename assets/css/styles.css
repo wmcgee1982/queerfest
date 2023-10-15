@@ -23,6 +23,25 @@
     background-color: var(--background);
     box-shadow: 0px 1px 10px var(--border);
   }
+
+  .containerBox h4 {
+    color: var(--dark)
+  }
+
+  .containerBox ul {
+    padding: 1rem 2rem;
+    line-height: 1.4rem;
+  }
+
+  .containerBox a {
+    text-decoration: none;
+  }
+  .containerBox a:hover,
+  .containerBox a:focus {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+
   .containerBoxDark {
     padding: 1rem;
     border-radius: 0.5rem;
@@ -101,6 +120,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
     "tt tt ss"
+    "mt mt mt"
     "mu mu mu";
     background-color: var(--dark);
     box-shadow: 0px 0px 5px var(--border);
@@ -137,7 +157,6 @@
     outline: 1px solid white;
     outline-offset: 2px;
   }
-  
   button {
     grid-area: 1 / 1;
     background-color: transparent;
@@ -145,11 +164,18 @@
     padding-right: 0.5rem;
     cursor: pointer;
   }
-  
   .fa {
     font-size: 20px;
   }
   
+  /* *** Menu Text *** */
+  .menuText {
+    grid-area: mt;
+    color: white;
+    padding: 0rem 0rem 1rem 1rem;
+    font-style: italic;
+  }
+
   /* *** Menu *** */
   #menu {
     grid-area: mu;
@@ -157,18 +183,18 @@
   }
   #menu ul {
     list-style-type: none;
-    text-align: right;
     padding: 0.5rem;
+    text-align: right;
   }
   #menu li {
     display: inline-block;
-    text-align: center;
     margin-inline: 0.5rem;
   }
   #menu a {
     text-decoration: none;
     padding: 0.5rem;
     color: var(--dark);
+    font-weight: lighter;
   }
   #menu a:hover,
   #menu a:focus {
@@ -490,3 +516,36 @@
   #footerColumns a {
     color: var(--background);
   }
+  
+  /* *** Governnce Page *** */
+
+  /* *** Gov Main Grid *** */
+  .mainGridGov {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "gi gi sb"
+    "gi gi sb";
+    gap: 2rem;
+  }
+ 
+  /* *** Governance Intro Text *** */
+  .govIntro {
+    grid-area: gi;
+    border-radius: 10px;
+  }
+  .govIntro h1 {
+    color: var(--dark);
+    padding: 0rem 1rem;
+  }
+  .govIntro ul {
+    padding-bottom: 1rem;
+  }
+  .govIntro li {
+    list-style-type: circle;
+    list-style-position: inside;
+    line-height: 1.5;
+    margin-left: 2rem;
+  }
+
